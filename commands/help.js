@@ -56,7 +56,7 @@ module.exports = {
            { name: '🎶 Tocando Agora', value: '* Exibir as informações da música atualmente sendo reproduzida.' },
           { name: '🔊 Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' },
         ) 
-/*
+
        .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
       const button1 = new ButtonBuilder()
         .setLabel('YouTube')
@@ -75,11 +75,11 @@ module.exports = {
 
       const row = new ActionRowBuilder()
         .addComponents(button1, button2, button3);
-*/
       interaction.reply({
         embeds: [musicCommandsEmbed, basicCommandsEmbed],
         components: [row]
       }).catch(e => {});
+      
     } catch (e) {
       console.error(e);
     }
