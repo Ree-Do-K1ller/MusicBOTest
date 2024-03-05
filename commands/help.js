@@ -78,7 +78,7 @@ module.exports = {
       //interaction.reply({
        // embeds: [musicCommandsEmbed, basicCommandsEmbed],
         //components: [row]
-      //}).catch(e => {});
+      }).catch(e => {});
       
     } catch (e) {
       console.error(e);
