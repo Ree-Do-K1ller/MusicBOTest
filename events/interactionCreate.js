@@ -55,7 +55,7 @@ return interaction?.reply({ content: "Rate Limited.", ephemeral: true })
 
             if (!channel_filter?.length > 0 && !interaction?.member?.permissions?.has("0x0000000000000020")) {
             channel_filter = data?.channels?.map(x => `<#${x.channel}>`).join(", ")
-            return interaction?.reply({ content: '🔴 Rate Limited'.replace("{channel_filter}", channel_filter), ephemeral: true }).catch(e => { })
+            return interaction?.reply({ content: '**( 🔴 )** Taxa limitada'.replace("{channel_filter}", channel_filter), ephemeral: true }).catch(e => { })
             }
         }
             }
@@ -82,21 +82,21 @@ return interaction?.reply({ content: "Rate Limited.", ephemeral: true })
             }
             }
             if (props && props.voiceChannel) {
-            if (!interaction?.member?.voice?.channelId) return interaction?.reply({ content: `🔴 Join Voice channel First!!`, ephemeral: true }).catch(e => { })
+            if (!interaction?.member?.voice?.channelId) return interaction?.reply({ content: `**( 🔴 )** Junte-se ao canal voz primeiro.`, ephemeral: true }).catch(e => { })
             const guild_me = interaction?.guild?.members?.cache?.get(client?.user?.id);
             if (guild_me?.voice?.channelId) {
             if (guild_me?.voice?.channelId !== interaction?.member?.voice?.channelId) {
-            return interaction?.reply({ content: `🔴 Must be in same VC!!`, ephemeral: true }).catch(e => { })
+            return interaction?.reply({ content: `**( 🔴 )** Deve estar no mesmo canal de voz.`, ephemeral: true }).catch(e => { })
             }
             }
             }
             return props.run(client, interaction);
             
             } else {
-            return interaction?.reply({ content: `▶️ Missing Permissions: **${props?.permissions?.replace("0x0000000000000020", "MANAGE GUILD")?.replace("0x0000000000000800", "SEND MESSAGES") || "SEND MESSAGES"}**`, ephemeral: true });
+            return interaction?.reply({ content: `**( ▶️ )** Permissões ausentes: **${props?.permissions?.replace("0x0000000000000020", "MANAGE GUILD")?.replace("0x0000000000000800", "SEND MESSAGES") || "SEND MESSAGES"}**`, ephemeral: true });
             }
             } catch (e) {
-            return interaction?.reply({ content: `❌ Error...\n\n\`\`\`${e?.message}\`\`\``, ephemeral: true });
+            return interaction?.reply({ content: `**( ❌ )** Erro...\n\n\`\`\`${e?.message}\`\`\``, ephemeral: true });
             }
             }
             });
@@ -112,7 +112,7 @@ return interaction?.reply({ content: "Rate Limited.", ephemeral: true })
             await topApi?.hasVoted(interaction?.user?.id).then(async voted => {
                 if (!voted) {
             const embed2 = new EmbedBuilder()
-          .setTitle("Vote "+client?.user?.username)
+          .setTitle("Voto "+client?.user?.username)
           .setColor(client?.config?.embedColor)
             return interaction?.reply({ content:"", embeds: [embed2], ephemeral: true })
                 } else {
