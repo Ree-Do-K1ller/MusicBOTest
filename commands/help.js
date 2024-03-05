@@ -31,17 +31,17 @@ module.exports = {
         .setColor(client.config.embedColor)
         .setTitle('🎸 **Comandos de música**')
         .addFields(
-          { name: '* 🎹 Play', value: 'Toca uma música de um determinado link ou texto.' },
-          { name: '* ⏹️ Stop', value: 'Faz o bot parar de tocar música.' },
-          { name: '* 📊 Queue', value: 'Visualize e gerencie a lista de músicas deste servidor.' },
-          { name: '* ⏭️ Skip', value: 'Ignora a música que está sendo reproduzida no momento.' },
-          { name: '* ⏸️ Pause', value: 'Pausar a música que está tocando.' },
-          { name: '* ▶️ Resume', value: 'Retomar a música pausada.' },
-          { name: '* 🔁 Loop', value: 'Tocar a música ou a fila repedidas vezes.' },
-          { name: '* 🔄 Autoplay', value: 'Ative ou desative a reprodução automática [reproduzir músicas aleatórias]' },
-          { name: '* ⏩ Seek', value: 'Procure um minuto específico na música atual.' },
-          { name: '* ⏮️ Previous', value: 'Reproduzir a música anterior da fila.' },
-          { name: '- 🔀 Shuffle', value: 'Embaralhe as músicas na fila.' }
+          { name: '🎹 Play:', value: '* Toca uma música de um determinado link ou texto.' },
+          { name: '⏹️ Parar:', value: '* Faz o bot parar de tocar música.' },
+          { name: '📊 Fila:', value: '* Visualize e gerencie a lista de músicas deste servidor.' },
+          { name: '⏭️ Pular:', value: '* Ignora a música que está sendo reproduzida no momento.' },
+          { name: '⏸️ Pause:', value: '* Pausar a música que está tocando.' },
+          { name: '▶️ Retomar:', value: '* Retomar a música pausada.' },
+          { name: '🔁 Loop:', value: '* Tocar a música ou a fila repedidas vezes.' },
+          { name: '🔄 Autoplay:', value: '* Ative ou desative a reprodução automática [reproduzir músicas aleatórias]' },
+          { name: '⏩ ProcurarMin:', value: '* Procure um minuto específico na música atual.' },
+          { name: '⏮️ Anterior:', value: '* Reproduzir a música anterior da fila.' },
+          { name: '🔀 Embaralhar:', value: '- Embaralhe as músicas na fila.' }
         )
         .setImage(`https://cdn.discordapp.com/attachments/1004341381784944703/1165201249331855380/RainbowLine.gif?ex=654f37ba&is=653cc2ba&hm=648a2e070fab36155f4171962e9c3bcef94857aca3987a181634837231500177&`); 
 
@@ -49,12 +49,12 @@ module.exports = {
         .setColor(client.config.embedColor)
         .setTitle('✨ **Comandos básicos**')
         .addFields(
-          { name: '🏓 Ping', value: "Verifique a latência do bot." },
-          { name: '🗑️ Clear', value: 'Limpe a fila de músicas deste servidor.' },
-          { name: '⏱️ Time', value: 'Exibir o tempo de reprodução da música atual.' },
-          { name: '🎧 Filter', value: 'Aplique filtros para aprimorar o som como você gosta.' },
-           { name: '🎵 Now Playing', value: 'Exibir as informações da música atualmente sendo reproduzida.' },
-          { name: '🔊 Volume', value: 'Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' },
+          { name: '🏓 Ping', value: "* Verifique a latência do bot." },
+          { name: '🗑️ Limpar', value: '* Limpe a fila de músicas deste servidor.' },
+          { name: '⏱️ Temp', value: '* Exibir o tempo de reprodução da música atual.' },
+          { name: '🎧 Filtro', value: '* Aplique filtros para aprimorar o som como você gosta.' },
+           { name: '🎵 Tocando Agora', value: '* Exibir as informações da música atualmente sendo reproduzida.' },
+          { name: '🔊 Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' },
         ) 
        .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
       const button1 = new ButtonBuilder()
