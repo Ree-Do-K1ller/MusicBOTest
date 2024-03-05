@@ -7,7 +7,7 @@ module.exports = {
   status: 'RTXX GG',
   commandsDir: './commands',
   language: "en",
-  embedColor: "00fbff",
+  embedColor: "#9000ff",
   errorLog: "",
 
 
