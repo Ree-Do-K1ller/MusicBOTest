@@ -29,7 +29,7 @@ module.exports = {
     try {
       const musicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('**( 🎻 ) ————— Comandos de música:**')
+        .setTitle('**( 🎻 ) ═══════════ Comandos de música:**')
         .addFields(
           { name: '**[ 🎹 ]** Play:', value: '* Toca uma música de um determinado link ou texto.' },
           { name: '**[ ⏹️ ]** Parar:', value: '* Faz o bot parar de tocar música.' },
@@ -47,14 +47,14 @@ module.exports = {
 
       const basicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('**( 🧁 ) ————— Comandos básicos:**')
+        .setTitle('**( 🧁 ) ═══════════ Comandos básicos:**')
         .addFields(
-          { name: '🏓 Ping', value: "* Verifique a latência do bot." },
-          { name: '🗑️ Limpar', value: '* Limpe a fila de músicas deste servidor.' },
-          { name: '⏱️ Temp', value: '* Exibir o tempo de reprodução da música atual.' },
-          { name: '🎧 Filtro', value: '* Aplique filtros para aprimorar o som como você gosta.' },
-           { name: '🎶 Tocando Agora', value: '* Exibir as informações da música atualmente sendo reproduzida.' },
-          { name: '🔊 Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' },
+          { name: '**[ 🏓 ]** Ping', value: "* Verifique a latência do bot." },
+          { name: '**[ 🗑️ ]** Limpar', value: '* Limpe a fila de músicas deste servidor.' },
+          { name: '**[ ⏱️ ]** Temp', value: '* Exibir o tempo de reprodução da música atual.' },
+          { name: '**[ 🎧 ]** Filtro', value: '* Aplique filtros para aprimorar o som como você gosta.' },
+           { name: '**[ 🎶 ]** Tocando Agora', value: '* Exibir as informações da música atualmente sendo reproduzida.' },
+          { name: '**[ 🔊 ]** Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' },
         ) 
 
        .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
