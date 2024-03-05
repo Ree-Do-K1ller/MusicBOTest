@@ -1,5 +1,5 @@
-const status = "AUTOMATIC";
-const botName = "🎸 Music Bot ";
+const status = "AUTOMATICO";
+const botName = "🎻 Bot de Musica ";
 const rtxText = "RTX";
 const version = "Latest@ v3.5"; 
 const startTime = Date.now();
@@ -10,10 +10,10 @@ function printWatermark() {
   console.log('\x1b[1m\x1b[36m╔════════════════════════════════════════════╗');
   console.log('\x1b[1m\x1b[36m║                                            ║');
   console.log(`\x1b[1m\x1b[36m            ${botName}     `);
-  console.log(`\x1b[1m\x1b[36m            👑 Authorization : ${status}    `);
+  console.log(`\x1b[1m\x1b[36m            👑 Autorizacao : ${status}    `);
   console.log(`\x1b[1m\x1b[36m            💡 Versao: ${version}`);
-  console.log(`\x1b[1m\x1b[36m            📅 Uptime: ${uptimeInSeconds}s`);
-  console.log(`\x1b[1m\x1b[36m            🚀 Powered by ${rtxText}`);
+  console.log(`\x1b[1m\x1b[36m            📅 Tempo de atividade: ${uptimeInSeconds}s`);
+  console.log(`\x1b[1m\x1b[36m            🚀 Distribuído por ${rtxText}`);
   console.log('\x1b[1m\x1b[36m║                                            ║');
   console.log('\x1b[1m\x1b[36m╚════════════════════════════════════════════╝\x1b[0m');
 }
