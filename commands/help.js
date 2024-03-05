@@ -29,33 +29,34 @@ module.exports = {
     try {
       const musicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('🎸 **Comandos de música**')
+        .setTitle('**( 🎻 ) ————— Comandos de música:**')
         .addFields(
-          { name: '🎹 Play:', value: '* Toca uma música de um determinado link ou texto.' },
-          { name: '⏹️ Parar:', value: '* Faz o bot parar de tocar música.' },
-          { name: '📊 Fila:', value: '* Visualize e gerencie a lista de músicas deste servidor.' },
-          { name: '⏭️ Pular:', value: '* Ignora a música que está sendo reproduzida no momento.' },
-          { name: '⏸️ Pause:', value: '* Pausar a música que está tocando.' },
-          { name: '▶️ Retomar:', value: '* Retomar a música pausada.' },
-          { name: '🔁 Loop:', value: '* Tocar a música ou a fila repedidas vezes.' },
-          { name: '🔄 Autoplay:', value: '* Ative ou desative a reprodução automática [reproduzir músicas aleatórias]' },
-          { name: '⏩ ProcurarMin:', value: '* Procure um minuto específico na música atual.' },
-          { name: '⏮️ Anterior:', value: '* Reproduzir a música anterior da fila.' },
-          { name: '🔀 Embaralhar:', value: '- Embaralhe as músicas na fila.' }
+          { name: '**[ 🎹 ]** Play:', value: '* Toca uma música de um determinado link ou texto.' },
+          { name: '**[ ⏹️ ]** Parar:', value: '* Faz o bot parar de tocar música.' },
+          { name: '**[ 📊 ]** Fila:', value: '* Visualize e gerencie a lista de músicas deste servidor.' },
+          { name: '**[ ⏭️ ]** Pular:', value: '* Ignora a música que está sendo reproduzida no momento.' },
+          { name: '**[ ⏸️ ]** Pause:', value: '* Pausar a música que está tocando.' },
+          { name: '**[ ▶️ ]** Retomar:', value: '* Retomar a música pausada.' },
+          { name: '**[ 🔁 ]** Loop:', value: '* Tocar a música ou a fila repedidas vezes.' },
+          { name: '**[ 🔄 ]** Autoplay:', value: '* Ative ou desative a reprodução automática [reproduzir músicas aleatórias]' },
+          { name: '**[ ⏩ ]** ProcurarMin:', value: '* Procure um minuto específico na música atual.' },
+          { name: '**[ ⏮️ ]** Anterior:', value: '* Reproduzir a música anterior da fila.' },
+          { name: '**[ 🔀 ]** Embaralhar:', value: '- Embaralhe as músicas na fila.' }
         )
-        .setImage(`https://cdn.discordapp.com/attachments/1004341381784944703/1165201249331855380/RainbowLine.gif?ex=654f37ba&is=653cc2ba&hm=648a2e070fab36155f4171962e9c3bcef94857aca3987a181634837231500177&`); 
+        .setImage(`https://media.discordapp.net/attachments/734728994842345545/1196925745004552262/tumblr_029576453f8769240b130bba5df3b02b_454e6a75_2048.png?ex=65f0c5f7&is=65de50f7&hm=0e277ab37030d929b5fca2906a291d27de4c79131adff3051f681cc82c0e3c7e&=&format=webp&quality=lossless&width=1020&height=105`); 
 
       const basicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('✨ **Comandos básicos**')
+        .setTitle('**( 🧁 ) ————— Comandos básicos:**')
         .addFields(
           { name: '🏓 Ping', value: "* Verifique a latência do bot." },
           { name: '🗑️ Limpar', value: '* Limpe a fila de músicas deste servidor.' },
           { name: '⏱️ Temp', value: '* Exibir o tempo de reprodução da música atual.' },
           { name: '🎧 Filtro', value: '* Aplique filtros para aprimorar o som como você gosta.' },
-           { name: '🎵 Tocando Agora', value: '* Exibir as informações da música atualmente sendo reproduzida.' },
+           { name: '🎶 Tocando Agora', value: '* Exibir as informações da música atualmente sendo reproduzida.' },
           { name: '🔊 Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' },
         ) 
+/*
        .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
       const button1 = new ButtonBuilder()
         .setLabel('YouTube')
@@ -74,7 +75,7 @@ module.exports = {
 
       const row = new ActionRowBuilder()
         .addComponents(button1, button2, button3);
-
+*/
       interaction.reply({
         embeds: [musicCommandsEmbed, basicCommandsEmbed],
         components: [row]
