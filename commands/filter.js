@@ -1,7 +1,7 @@
 const db = require("../mongoDB");
 module.exports = {
-  name: "filter",
-  description: "Adds audio filter to ongoing music.",
+  name: "Filtro",
+  description: "Adiciona filtro de áudio à música em andamento.",
   permissions: "0x0000000000000800",
   options: [],
   voiceChannel: true,
