@@ -9,12 +9,11 @@ module.exports = async (client, queue, song) => {
       .setAuthor({
         name: 'Reproduzindo a música',
         iconURL: 'https://miro.medium.com/v2/resize:fit:1400/1*NvBN4a23YP0Xlci9ZgKusw.gif', 
-        url: 'https://discord.gg/FUEHs7RCqz'
     })
     .setDescription(`\n ‎ \n▶️ **Detalhes :** **${song?.name}**\n▶️ **Aproveite a melhor experiência musical. ** \n▶️ **Se o link quebrar a reprodução, avise em: <#1154901442814025860>.**`)
 .setImage(queue.songs[0].thumbnail)
     .setColor('#FF0000')
-    .setFooter({ text: 'Para mais informações, use **/ajuda-dj**.' });
+    .setFooter({ text: 'Para mais informações, use /ajuda-dj.' });
      
       queue?.textChannel?.send({ embeds: [embed] }).catch(e => { });
     }
