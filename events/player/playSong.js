@@ -8,12 +8,12 @@ module.exports = async (client, queue, song) => {
       const embed = new EmbedBuilder()
       .setAuthor({
         name: 'Reproduzindo a música',
-        iconURL: 'https://images-ext-1.discordapp.net/external/4-hSFPrG3_z4qHJNmNz3G8YrYNKyQy9c2Iem_dbFusY/https/miro.medium.com/v2/resize%3Afit%3A1400/1%2ANvBN4a23YP0Xlci9ZgKusw.gif', 
+        iconURL: 'https://cdn.discordapp.com/attachments/1140841446228897932/1144671132948103208/giphy.gif', 
     })
     .setDescription(`\n ‎ \n▶️ **Detalhes :** **${song?.name}**\n▶️ **Aproveite a melhor experiência musical. ** \n▶️ **Se o link quebrar a reprodução, avise em: <#1154901442814025860>.**`)
-.setImage(queue.songs[0].thumbnail)
+    .setImage(queue.songs[0].thumbnail)
     .setColor('#5b2980')
-    .setFooter({ text: 'Para mais informações, use /ajuda-dj.' });
+    .setFooter({ text: 'Para mais informações, use /ajuda dj.' });
      
       queue?.textChannel?.send({ embeds: [embed] }).catch(e => { });
     }
