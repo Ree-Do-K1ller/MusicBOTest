@@ -49,12 +49,13 @@ module.exports = {
         .setColor(client.config.embedColor)
         .setTitle('**( 🧁 ) ═══════ Comandos básicos: ═══════**')
         .addFields(
+          { name: '**[ 👑 ]** Dono', value: "* Mostra o proprietário código e o tradutor." },
           { name: '**[ 🏓 ]** Ping', value: "* Verifique a latência do bot." },
           { name: '**[ 🗑️ ]** Limpar', value: '* Limpe a fila de músicas deste servidor.' },
           { name: '**[ ⏱️ ]** Temp', value: '* Exibir o tempo de reprodução da música atual.' },
           { name: '**[ 🎧 ]** Filtro', value: '* Aplique filtros para aprimorar o som como você gosta.' },
-           { name: '**[ 🎶 ]** Tocando Agora', value: '* Exibir as informações da música atualmente sendo reproduzida.' },
-          { name: '**[ 🔊 ]** Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' },
+          { name: '**[ 🎶 ]** Tocando Agora', value: '* Exibir as informações da música atualmente sendo reproduzida.' },
+          { name: '**[ 🔊 ]** Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' }
         ) 
 
        .setImage('https://media.discordapp.net/attachments/1153816645106684096/1154791404464246814/standard_1.gif?ex=65f45fcd&is=65e1eacd&hm=db4548b9aa811de32b1852da0223dc813e61ad88a54d91530755a322046ca2be&=&width=832&height=468')
