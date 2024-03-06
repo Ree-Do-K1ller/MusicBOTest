@@ -74,12 +74,7 @@ module.exports = {
         .setURL('https://replit.com/@BEASTGAMERS1?tab=community')
         .setStyle(ButtonStyle.Link);
       */
-      const row = new ActionRowBuilder()
-        .addComponents(button1, button2, button3);
-      interaction.reply({
-        embeds: [musicCommandsEmbed, basicCommandsEmbed],
-        components: [row]
-      }).catch(e => {});
+
       
       
     } catch (e) {
