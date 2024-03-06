@@ -6,11 +6,11 @@ let selectedThumbnailURL;
 
 module.exports = {
   name: "play",
-  description: "Queridissimo(a) leitor(a), apresento-lhe meu belo e tocador de música.",
+  description: "Prezado leitor(a), explore de todas as formas o seu gosto músical.",
   permissions: "0x0000000000000800",
   options: [{
     name: 'name',
-    description: 'Digite o nome da música que deseja tocar.',
+    description: 'Type the name of the music you want to play.',
     type: ApplicationCommandOptionType.String,
     required: true
   }],
@@ -19,7 +19,7 @@ module.exports = {
     try {
 
       const name = interaction.options.getString('name')
-      if (!name) return interaction.reply({ content: `**( ❌ )** Insira um nome de música válido.`, ephemeral: true }).catch(e => { });
+      if (!name) return interaction.reply({ content: `❌ Enter a valid song name.`, ephemeral: true }).catch(e => { });
       let res;
       try {
         res = await client.player.search(name, {
@@ -28,14 +28,14 @@ module.exports = {
           interaction
         });
       } catch (e) {
-        return interaction.editReply({ content: `**( ❌ )** Sem resultados.` }).catch(e => { });
+        return interaction.editReply({ content: `❌ No results` }).catch(e => { });
       }
 
-      if (!res || !res.length || !res.length > 1) return interaction.reply({ content: `**( ❌ )** Sem resultados.`, ephemeral: true }).catch(e => { });
+      if (!res || !res.length || !res.length > 1) return interaction.reply({ content: `❌ No results`, ephemeral: true }).catch(e => { });
 
       const embed = new EmbedBuilder();
       embed.setColor(client.config.embedColor);
-      embed.setTitle(`Encontrado: ${name}`);
+      embed.setTitle(`Found: ${name}`);
 
       const maxTracks = res.slice(0, 10);
 
@@ -62,12 +62,12 @@ module.exports = {
 
       let cancel = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
-          .setLabel("Cancelar")
+          .setLabel("Cancel")
           .setStyle(ButtonStyle.Danger)
           .setCustomId('cancel')
       );
 
-      embed.setDescription(`${maxTracks.map((song, i) => `**${i + 1}**. [${song.name}](${song.url}) | \`${song.uploader.name}\``).join('\n')}\n\n✨ Escolha uma música das encontradas.`);
+      embed.setDescription(`${maxTracks.map((song, i) => `**${i + 1}**. [${song.name}](${song.url}) | \`${song.uploader.name}\``).join('\n')}\n\n✨Choose a song from below!!`);
 
       let code;
       if (buttons1 && buttons2) {
@@ -83,7 +83,7 @@ module.exports = {
         collector.on('collect', async (button) => {
           switch (button.customId) {
             case 'cancel': {
-              embed.setDescription(`Pesquisa interrompida`);
+              embed.setDescription(`Search interrupted`);
               await interaction.editReply({ embeds: [embed], components: [] }).catch(e => { });
               return collector.stop();
             }
@@ -100,7 +100,7 @@ module.exports = {
                   interaction
                 });
               } catch (e) {
-                await interaction.editReply({ content: `**( ❌ )** Sem resultados.`, ephemeral: true }).catch(e => { });
+                await interaction.editReply({ content: `❌ No results!`, ephemeral: true }).catch(e => { });
               }
               return collector.stop();
             }
