@@ -9,7 +9,7 @@ module.exports = {
   description: "Queridissimo(a) leitor(a), apresento-lhe meu belo e tocador de música.",
   permissions: "0x0000000000000800",
   options: [{
-    name: 'nome',
+    name: 'name',
     description: 'Digite o nome da música que deseja tocar.',
     type: ApplicationCommandOptionType.String,
     required: true
