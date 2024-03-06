@@ -29,7 +29,7 @@ module.exports = {
     try {
       const musicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('**( 🎻 ) ═══════════ Comandos de música:**')
+        .setTitle('**( 🎻 ) ═══════ Comandos de música: ═══════**')
         .addFields(
           { name: '**[ 🎹 ]** Play:', value: '* Toca uma música de um determinado link ou texto.' },
           { name: '**[ ⏹️ ]** Parar:', value: '* Faz o bot parar de tocar música.' },
@@ -47,7 +47,7 @@ module.exports = {
 
       const basicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('**( 🧁 ) ═══════════ Comandos básicos:**')
+        .setTitle('**( 🧁 ) ═══════ Comandos básicos: ═══════**')
         .addFields(
           { name: '**[ 🏓 ]** Ping', value: "* Verifique a latência do bot." },
           { name: '**[ 🗑️ ]** Limpar', value: '* Limpe a fila de músicas deste servidor.' },
