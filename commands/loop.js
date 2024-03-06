@@ -29,15 +29,15 @@ module.exports = {
   
       let button = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
-          .setLabel("Fila.")
+          .setLabel("Fila")
           .setStyle(ButtonStyle.Secondary)
           .setCustomId("queue"),
         new ButtonBuilder()
-          .setLabel("Música atual.")
-          .setStyle(ButtonStyle.Secondary)
+          .setLabel("Música atual")
+          .setStyle(ButtonStyle.Primary)
           .setCustomId("nowplaying"),
         new ButtonBuilder()
-          .setLabel("Parar Loop.")
+          .setLabel("Parar Loop")
           .setStyle(ButtonStyle.Danger)
           .setCustomId("close")
       )
@@ -47,7 +47,6 @@ module.exports = {
         .setAuthor({
         name: 'Faça um loop de suas melodias',
         iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157318080670728283/7905-repeat.gif?ex=65182bf4&is=6516da74&hm=9ae58f40fcea5dc42a2a992bbd159d50116b3bafe5c5f7728e3a5276442efd2a&', 
-        url: 'https://discord.gg/FUEHs7RCqz'
     })
         .setDescription('**Fazendo um loop. Deixe a música tocar sem parar.**')
      
