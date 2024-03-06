@@ -32,9 +32,8 @@ module.exports = {
             .setAuthor({
           name: 'Dono e tradutor.',
           iconURL: 'https://static.wikia.nocookie.net/2021fa06-849e-4a6d-bb3b-7d3f545aa6a6',
-          url: 'https://discord.gg/FUEHs7RCqz'
         })
-            .setDescription(`### Sobre o proprietário:\n\n ▶️ Eu mesmo, Shiva, também conhecido como RTX. Eu sou um desenvolvedor de bot discord e desenvolvedor web. Adoro jogar, assistir animes e construir diferentes aplicações de servidor web. Você obterá respostas mais rápidas no Instagram do que em outras mídias sociais. Sinta-se livre para me contatar!\n### Redes sociais:\n * **( ❤️ ) YouTube:** [RTX GAMING](${youtubeLink})\n * **( 💙 ) Instagram:** [rtxxgg](${InstagramLink})\n\n **>> A __<@1214377811104763944>__ foi traduzida por:** __<@771829068961153034>__.`)
+            .setDescription(`### Sobre o proprietário:\n\n **▶** Eu mesmo, Shiva, também conhecido como RTX. Eu sou um desenvolvedor de bot discord e desenvolvedor web. Adoro jogar, assistir animes e construir diferentes aplicações de servidor web. Você obterá respostas mais rápidas no Instagram do que em outras mídias sociais. Sinta-se livre para me contatar!\n### Redes sociais:\n * **( ❤️ ) YouTube:** [RTX GAMING](${youtubeLink})\n * **( 💙 ) Instagram:** [rtxxgg](${InstagramLink})\n\n **>> A __<@1214377811104763944>__ foi traduzida por:** __<@771829068961153034>__.`)
             .setTimestamp();
       interaction.reply({ embeds: [embed] }).catch(e => {});
 
