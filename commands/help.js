@@ -58,7 +58,7 @@ module.exports = {
           { name: '**[ 🔊 ]** Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' }
         ) 
 
-       .setImage('https://media.discordapp.net/attachments/1153816645106684096/1154791404464246814/standard_1.gif?ex=65f45fcd&is=65e1eacd&hm=db4548b9aa811de32b1852da0223dc813e61ad88a54d91530755a322046ca2be&=&width=832&height=468')
+       .setImage('https://media.discordapp.net/attachments/1153816645106684096/1154791404464246814/standard_1.gif?ex=65f45fcd&is=65e1eacd&hm=db4548b9aa811de32b1852da0223dc813e61ad88a54d91530755a322046ca2be&=&width=832&height=468');
 /*
        const button1 = new ButtonBuilder()
         .setLabel('YouTube')
