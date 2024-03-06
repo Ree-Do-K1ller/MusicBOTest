@@ -19,7 +19,7 @@ module.exports = {
     try {
 
       const name = interaction.options.getString('name')
-      if (!name) return interaction.reply({ content: `❌ Enter a valid song name.`, ephemeral: true }).catch(e => { });
+      if (!name) return interaction.reply({ content: `**( ❌ )** Digite um nome válido.`, ephemeral: true }).catch(e => { });
       let res;
       try {
         res = await client.player.search(name, {
@@ -28,10 +28,10 @@ module.exports = {
           interaction
         });
       } catch (e) {
-        return interaction.editReply({ content: `❌ No results` }).catch(e => { });
+        return interaction.editReply({ content: `**( ❌ )** Sem resultados.` }).catch(e => { });
       }
 
-      if (!res || !res.length || !res.length > 1) return interaction.reply({ content: `❌ No results`, ephemeral: true }).catch(e => { });
+      if (!res || !res.length || !res.length > 1) return interaction.reply({ content: `**( ❌ )** Sem resultados.`, ephemeral: true }).catch(e => { });
 
       const embed = new EmbedBuilder();
       embed.setColor(client.config.embedColor);
@@ -62,12 +62,12 @@ module.exports = {
 
       let cancel = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
-          .setLabel("Cancel")
+          .setLabel("Cancelar")
           .setStyle(ButtonStyle.Danger)
           .setCustomId('cancel')
       );
 
-      embed.setDescription(`${maxTracks.map((song, i) => `**${i + 1}**. [${song.name}](${song.url}) | \`${song.uploader.name}\``).join('\n')}\n\n✨Choose a song from below!!`);
+      embed.setDescription(`${maxTracks.map((song, i) => `**${i + 1}**. [${song.name}](${song.url}) | \`${song.uploader.name}\``).join('\n')}\n\n✨ Escolha uma música e adentre neste mundo.`);
 
       let code;
       if (buttons1 && buttons2) {
@@ -100,7 +100,7 @@ module.exports = {
                   interaction
                 });
               } catch (e) {
-                await interaction.editReply({ content: `❌ No results!`, ephemeral: true }).catch(e => { });
+                await interaction.editReply({ content: `**( ❌ )** Sem resultados.`, ephemeral: true }).catch(e => { });
               }
               return collector.stop();
             }
