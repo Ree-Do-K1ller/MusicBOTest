@@ -34,7 +34,7 @@ module.exports = {
           iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157310253520662638/2443-iconperson.png?ex=651824aa&is=6516d32a&hm=0becc4a0fda01e5a02a63cf098db30c287e60a474f8d2da4ddeae7f47d98a5a3&',
           url: 'https://discord.gg/FUEHs7RCqz'
         })
-            .setDescription(`## Sobre o proprietário:\n\n ▶️ Eu mesmo, Shiva, também conhecido como RTX. Eu sou um desenvolvedor de bot discord e desenvolvedor web. Adoro jogar, assistir animes e construir diferentes aplicações de servidor web. Você obterá respostas mais rápidas no Instagram do que em outras mídias sociais. Sinta-se livre para me contatar!\n ### **Redes sociais:**\n * YouTube : ❤️ [RTX GAMING](${youtubeLink})\n - Instagram : 💙 [rtxxgg](${InstagramLink})\n\n **>> A <@1214377811104763944> foi traduzida por:** <@771829068961153034>.`)
+            .setDescription(`## Sobre o proprietário:\n\n ▶️ Eu mesmo, Shiva, também conhecido como RTX. Eu sou um desenvolvedor de bot discord e desenvolvedor web. Adoro jogar, assistir animes e construir diferentes aplicações de servidor web. Você obterá respostas mais rápidas no Instagram do que em outras mídias sociais. Sinta-se livre para me contatar!\n ### Redes sociais:\n * ( ❤️ )YouTube : [RTX GAMING](${youtubeLink}) - ( 💙 ) Instagram : [rtxxgg](${InstagramLink})\n\n **>> A <@1214377811104763944> foi traduzida por:** <@771829068961153034>.`)
             .setTimestamp();
       interaction.reply({ embeds: [embed] }).catch(e => {});
 
