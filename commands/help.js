@@ -43,7 +43,7 @@ module.exports = {
           { name: '**[ ⏮️ ]** Anterior:', value: '* Reproduzir a música anterior da fila.' },
           { name: '**[ 🔀 ]** Embaralhar:', value: '- Embaralhe as músicas na fila.' }
         )
-        .setImage(`https://media.discordapp.net/attachments/734728994842345545/1196925745004552262/tumblr_029576453f8769240b130bba5df3b02b_454e6a75_2048.png?ex=65f0c5f7&is=65de50f7&hm=0e277ab37030d929b5fca2906a291d27de4c79131adff3051f681cc82c0e3c7e&=&format=webp&quality=lossless&width=1020&height=105`); 
+        .setImage(`https://media.discordapp.net/attachments/1153816645106684096/1154791404464246814/standard_1.gif?ex=65f45fcd&is=65e1eacd&hm=db4548b9aa811de32b1852da0223dc813e61ad88a54d91530755a322046ca2be&=&width=832&height=468`); 
 
       const basicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
@@ -58,6 +58,7 @@ module.exports = {
         ) 
 
        .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
+      /*
       const button1 = new ButtonBuilder()
         .setLabel('YouTube')
         .setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
@@ -72,13 +73,14 @@ module.exports = {
         .setLabel('Code')
         .setURL('https://replit.com/@BEASTGAMERS1?tab=community')
         .setStyle(ButtonStyle.Link);
-
+      */
       const row = new ActionRowBuilder()
         .addComponents(button1, button2, button3);
       interaction.reply({
         embeds: [musicCommandsEmbed, basicCommandsEmbed],
         components: [row]
       }).catch(e => {});
+      
       
     } catch (e) {
       console.error(e);
