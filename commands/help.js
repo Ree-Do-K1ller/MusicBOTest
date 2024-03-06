@@ -29,7 +29,7 @@ module.exports = {
     try {
       const musicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('**( 🎻 ) ═══════ Comandos de música: ═══════**')
+        .setTitle('**( 🎻 ) ══════ Comandos de música: ══════**')
         .addFields(
           { name: '**[ 🎹 ]** Play:', value: '* Toca uma música de um determinado link ou texto.' },
           { name: '**[ ⏹️ ]** Parar:', value: '* Faz o bot parar de tocar música.' },
@@ -43,13 +43,13 @@ module.exports = {
           { name: '**[ ⏮️ ]** Anterior:', value: '* Reproduzir a música anterior da fila.' },
           { name: '**[ 🔀 ]** Embaralhar:', value: '- Embaralhe as músicas na fila.' }
         )
-        .setImage(`https://media.discordapp.net/attachments/732337957876269098/1149977725357002812/16c8f9a22a9e63cac141ae0cf7b0a923755b62d8r1-1500-643_hq.gif?ex=65f551b7&is=65e2dcb7&hm=4a8ea67c52ebedacacef6bcbbfa21c509f3cf3d66e607ddb4b6613a669107b67&=`); 
+        .setImage(`https://media.discordapp.net/attachments/734728994842345545/1192510904785448981/a57498e0e03d0b8b4c89b469096061d8_1.jpg`); 
 
       const basicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('**( 🧁 ) ═══════ Comandos básicos: ═══════**')
+        .setTitle('**( 🧁 ) ══════ Comandos básicos: ══════**')
         .addFields(
-          { name: '**[ 👑 ]** Dono', value: "* Mostra o proprietário código e o tradutor." },
+          { name: '**[ 👑 ]** Dono', value: "* Mostra o proprietário do código e do tradutor." },
           { name: '**[ 🏓 ]** Ping', value: "* Verifique a latência do bot." },
           { name: '**[ 🗑️ ]** Limpar', value: '* Limpe a fila de músicas deste servidor.' },
           { name: '**[ ⏱️ ]** Temp', value: '* Exibir o tempo de reprodução da música atual.' },
@@ -60,7 +60,7 @@ module.exports = {
 
        .setImage('https://media.discordapp.net/attachments/1153816645106684096/1154791404464246814/standard_1.gif?ex=65f45fcd&is=65e1eacd&hm=db4548b9aa811de32b1852da0223dc813e61ad88a54d91530755a322046ca2be&=&width=832&height=468');
 
-      const button1 = new ButtonBuilder()
+      /*const button1 = new ButtonBuilder()
         .setLabel('YouTube')
         .setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
         .setStyle(ButtonStyle.Link);
@@ -81,7 +81,7 @@ module.exports = {
         embeds: [musicCommandsEmbed, basicCommandsEmbed],
         components: [row]
       }).catch(e => {});
-
+      */
       
     } catch (e) {
       console.error(e);
