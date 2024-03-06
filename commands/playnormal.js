@@ -1,18 +1,18 @@
 const { ApplicationCommandOptionType, EmbedBuilder } = require('discord.js');
 const db = require("../mongoDB");
 module.exports = {
-  name: "playsong",
-  description: "Play a track.",
+  name: "playmusica",
+  description: "Toque um som.",
   permissions: "0x0000000000000800",
   options: [
     {
       name: "normal",
-      description: "Open music from other platforms.",
+      description: "Abra músicas de outras plataformas.",
       type: ApplicationCommandOptionType.Subcommand,
       options: [
         {
           name: "name",
-          description: "Write your music name.",
+          description: "Escreva o nome da sua música.",
           type: ApplicationCommandOptionType.String,
           required: true
         }
@@ -20,12 +20,12 @@ module.exports = {
     },
     {
       name: "playlist",
-      description: "Write your playlist name.",
+      description: "Escreva o nome da sua playlist.",
       type: ApplicationCommandOptionType.Subcommand,
       options: [
         {
           name: "name",
-          description: "Write the name of the playlist you want to create.",
+          description: "Escreva o nome de sua playlist que deseja criar.",
           type: ApplicationCommandOptionType.String,
           required: true
         }
@@ -83,7 +83,7 @@ module.exports = {
                   interaction
                 })
               } catch (e) {
-                await interaction.editReply({ content: `❌ No results found!!`, ephemeral: true }).catch(e => { })
+                await interaction.editReply({ content: `**( ❌ )** Sem resultados.`, ephemeral: true }).catch(e => { })
               }
 
               playlist[i]?.playlist?.filter(p => p.name === playlistw).map(async p => {
