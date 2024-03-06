@@ -121,13 +121,13 @@ module.exports = {
       if (stp === "normal") {
   const name = interaction.options.getString('name');
   if (!name) {
-    return interaction.reply({ content: '▶️ Give Text or link', ephemeral: true }).catch(e => {});
+    return interaction.reply({ content: '**▶** Mande um texto ou link.', ephemeral: true }).catch(e => {});
   }
 
   const embed = new EmbedBuilder()
     .setColor('#3498db')
     .setColor('#FF0000')
-    .setDescription('**🎸 Get ready for a musical journey!**');
+    .setDescription('**( 🎻 )** Prepare-se para uma jornada musical.');
 
   await interaction.reply({ embeds: [embed] }).catch(e => {});
 
@@ -141,7 +141,7 @@ module.exports = {
     const errorEmbed = new EmbedBuilder()
       .setColor('#e74c3c')
       .setColor('#FF0000')
-      .setDescription('❌ No results found!!');
+      .setDescription('**( ❌ )** Sem resultados.');
 
     await interaction.editReply({ embeds: [errorEmbed], ephemeral: true }).catch(e => {});
   }
