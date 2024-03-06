@@ -1,4 +1,4 @@
-/*
+ad/*
 
   ██████╗░████████╗██╗░░██╗           
   ██╔══██╗╚══██╔══╝╚██╗██╔╝          
@@ -30,11 +30,11 @@ module.exports = {
         const embed = new EmbedBuilder()
             .setColor('#da2a41')
             .setAuthor({
-          name: 'Dono',
-          iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157310253520662638/2443-iconperson.png?ex=651824aa&is=6516d32a&hm=0becc4a0fda01e5a02a63cf098db30c287e60a474f8d2da4ddeae7f47d98a5a3&',
+          name: 'Dono e tradutor.',
+          iconURL: 'https://static.wikia.nocookie.net/2021fa06-849e-4a6d-bb3b-7d3f545aa6a6',
           url: 'https://discord.gg/FUEHs7RCqz'
         })
-            .setDescription(`### Sobre o proprietário:\n\n ▶️ Eu mesmo, Shiva, também conhecido como RTX. Eu sou um desenvolvedor de bot discord e desenvolvedor web. Adoro jogar, assistir animes e construir diferentes aplicações de servidor web. Você obterá respostas mais rápidas no Instagram do que em outras mídias sociais. Sinta-se livre para me contatar!\n### Redes sociais:\n * **( ❤️ ) YouTube:** [RTX GAMING](${youtubeLink})\n * **( 💙 ) Instagram:** [rtxxgg](${InstagramLink})\n\n **>> A __<@1214377811104763944>__ foi traduzida por:** <@771829068961153034>.`)
+            .setDescription(`### Sobre o proprietário:\n\n ▶️ Eu mesmo, Shiva, também conhecido como RTX. Eu sou um desenvolvedor de bot discord e desenvolvedor web. Adoro jogar, assistir animes e construir diferentes aplicações de servidor web. Você obterá respostas mais rápidas no Instagram do que em outras mídias sociais. Sinta-se livre para me contatar!\n### Redes sociais:\n * **( ❤️ ) YouTube:** [RTX GAMING](${youtubeLink})\n * **( 💙 ) Instagram:** [rtxxgg](${InstagramLink})\n\n **>> A __<@1214377811104763944>__ foi traduzida por:** __<@771829068961153034>__.`)
             .setTimestamp();
       interaction.reply({ embeds: [embed] }).catch(e => {});
 
