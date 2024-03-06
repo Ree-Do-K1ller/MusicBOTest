@@ -7,13 +7,14 @@ module.exports = async (client, queue, song) => {
     if (queue?.textChannel) {
       const embed = new EmbedBuilder()
       .setAuthor({
-        name: 'Reproduzindo a música',
+        name: 'Currently playing a Track',
         iconURL: 'https://cdn.discordapp.com/attachments/1140841446228897932/1144671132948103208/giphy.gif', 
+        url: 'https://discord.gg/FUEHs7RCqz'
     })
-    .setDescription(`\n ‎ \n▶️ **Detalhes :** **${song?.name}**\n▶️ **Aproveite a melhor experiência musical. ** \n▶️ **Se o link quebrar a reprodução, avise em: <#1154901442814025860>.**`)
-    .setImage(queue.songs[0].thumbnail)
-    .setColor('#5b2980')
-    .setFooter({ text: 'Para mais informações, use /ajuda dj.' });
+    .setDescription(`\n ‎ \n▶️ **Details :** **${song?.name}**\n▶️ **Enjoy the Ultimate Music Experience. ** \n▶️ **If link breaks playback try to give query.**`)
+.setImage(queue.songs[0].thumbnail)
+    .setColor('#FF0000')
+    .setFooter({ text: 'More info - Use /help command [RTX GAMING]' });
      
       queue?.textChannel?.send({ embeds: [embed] }).catch(e => { });
     }
