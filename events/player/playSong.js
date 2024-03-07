@@ -8,7 +8,7 @@ module.exports = async (client, queue, song) => {
       const embed = new EmbedBuilder()
       .setAuthor({
         name: 'Reproduzindo a música',
-        iconURL: 'https://favim.com/pd/s12/gif_previews/6/651/6519/65198/6519895.gif'
+        iconURL: 'https://cdn.discordapp.com/attachments/1103470110523531284/1215416575256035378/vu.gif'
     })
     .setDescription(`\n ‎ \n**▶ Detalhes:** **${song?.name}**\n**▶ Aproveite a melhor experiência musical.** \n**▶ Se o link quebrar a reprodução, tente fazer uma consulta.**`)
 .setImage(queue.songs[0].thumbnail)
