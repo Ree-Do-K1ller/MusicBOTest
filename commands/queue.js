@@ -72,7 +72,7 @@ module.exports = {
           .setTitle(`**[<a:catdance:1215095965397159936>]** Fila de: ${interaction.guild.name}`)
           .setThumbnail(interaction.guild.iconURL({ size: 2048, dynamic: true }))
           .setColor(client.config.embedColor)
-          .setDescription(`**▶** Tocando agora: \`${queue.songs[0].name}\`
+          .setDescription(`**▶ Tocando agora:** \${queue.songs[0].name}\
     ${current.map(data =>
             `\n\**${sayı++}\ |** [${data.title}](${data.url}) | **(Executado por <@${data.user.id}>)**`
           )}`)
