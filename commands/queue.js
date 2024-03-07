@@ -69,14 +69,14 @@ module.exports = {
         const current = trackl.slice(start, start + kaçtane)
         if (!current || !current?.length > 0) return interaction.reply({ content: '**( ⚠️ )** A fila está vazia.', ephemeral: true }).catch(e => { })
         return new EmbedBuilder()
-          .setTitle(`${interaction.guild.name}  Queue`)
+          .setTitle(`**[<a:catdance:1215095965397159936>]** Fila de: ${interaction.guild.name}`)
           .setThumbnail(interaction.guild.iconURL({ size: 2048, dynamic: true }))
           .setColor(client.config.embedColor)
-          .setDescription(`▶️ Tocando agora: \`${queue.songs[0].name}\`
+          .setDescription(`**▶** Tocando agora: \`${queue.songs[0].name}\`
     ${current.map(data =>
-            `\n\`${sayı++}\` | [${data.title}](${data.url}) | (Executed by <@${data.user.id}>)`
+            `\n\**${sayı++}\ |** [${data.title}](${data.url}) | **(Executado por <@${data.user.id}>)**`
           )}`)
-          .setFooter({ text: `Page ${page}/${Math.floor(a + 1)}` })
+          .setFooter({ text: `Página ${page}/${Math.floor(a + 1)}` })
       }
 
       const canFitOnOnePage = trackl.length <= kaçtane
