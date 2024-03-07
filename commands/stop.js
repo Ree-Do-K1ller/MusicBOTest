@@ -17,8 +17,8 @@ const db = require("../mongoDB");
 const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
-  name: "stop",
-  description: "Stops the music.",
+  name: "parar",
+  description: "Parar a música.",
   permissions: "0x0000000000000800",
   options: [],
   voiceChannel: true,
@@ -26,7 +26,7 @@ module.exports = {
     try {
       const queue = client.player.getQueue(interaction.guild.id);
       if (!queue || !queue.playing) {
-        return interaction.reply({ content: '⚠️ No music playing!!', ephemeral: true });
+        return interaction.reply({ content: '**( ⚠️ )** Nenhuma música está tocando no momento.', ephemeral: true });
       }
 
       queue.stop(interaction.guild.id);
@@ -34,11 +34,10 @@ module.exports = {
       const embed = new EmbedBuilder()
         .setColor('#f1002c')
         .setAuthor({
-          name: 'Music Stopped',
-          iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157305318255116400/pngtree-vector-stop-icon-png-image_4233262.jpg?ex=65182011&is=6516ce91&hm=d5a8ca6010716bae836b025f8d36557a95f14c13a705f65eb09a54161649c795&',
-          url: 'https://discord.gg/FUEHs7RCqz'
+          name: 'Música parada',
+          iconURL: 'https://media.discordapp.net/attachments/1103470110523531284/1215436450301223022/media-playback-stop-icon-1978x2048-87foypq1.png?ex=65fcbe67&is=65ea4967&hm=31c1e5918f6dd11333c17d9b45fadd5549fbe82e4148353b7d9f1509e732ca0d&=&format=webp&quality=lossless&width=452&height=468'
         })
-        .setDescription('**The journey stops, but the rhythm lives on.**')
+        .setDescription('**A viagem para, mas o ritmo continua. 🎻**')
         
 
       return interaction.reply({ embeds: [embed] });
