@@ -21,10 +21,20 @@ console.log('\x1b[36m%s\x1b[0m', '|    🚀 Commands Distracted!');
 
 console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`)
 
-setInterval(() => client.user.setPresence({ 
-   activities: [{ name: `com a Natsuki Empreendedora.`, type: ActivityType.Competing }], 
-   status: 'dnd',
-}), 10000);
+let status = [
+   {
+      name: `ROBLOX com Cupcake_cat11037.`,
+      type: ActivityType.Competing,
+      
+   }
+]
+
+
+
+setInterval(() => {
+   let random = Math.floor(Math.random() * status.length);
+   client.user.setActivity(status[random]);
+}, 10000);
 client.errorLog = config.errorLog
 } else {
 console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
@@ -32,9 +42,10 @@ console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
 console.log('\x1b[36m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
 
 /*
-setInterval(() => client.user.setActivity({ 
-  name: `Yuri's Reality.`, 
-  type: ActivityType.Listening }), 10000);
+setInterval(() => client.user.setPresence({ 
+   activities: [{ name: `ROBLOX com Cupcake_cat11037.`, type: ActivityType.Competing }], 
+   status: 'dnd',
+}), 10000);
 client.errorLog = config.errorLog
 } else {
 console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
