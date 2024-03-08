@@ -2,11 +2,11 @@ const { ApplicationCommandOptionType, EmbedBuilder } = require('discord.js');
 const db = require("../mongoDB");
 module.exports = {
   name: "procurarmin",
-  description: "pule para um minuto desejado.",
+  description: "pule para um minuto especificado.",
   permissions: "0x0000000000000800",
   options: [{
     name: "time",
-    description: "enter timestamp",
+    description: "insira o tempo desejado.",
     type: ApplicationCommandOptionType.String,
     required: true
   }],
