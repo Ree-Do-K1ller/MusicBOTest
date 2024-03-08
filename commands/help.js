@@ -43,7 +43,7 @@ module.exports = {
           { name: '**[ ⏮️ ]** Anterior:', value: '* Reproduzir a música anterior da fila.' },
           { name: '**[ 🔀 ]** Embaralhar:', value: '- Embaralhe as músicas na fila.' }
         )
-        .setImage(`https://media.discordapp.net/attachments/734728994842345545/1192510904785448981/a57498e0e03d0b8b4c89b469096061d8_1.jpg`); 
+        .setImage(`https://media.discordapp.net/attachments/732337957876269098/1206725808589250620/Tumblr_l_223755323429725.gif`); 
 
       const basicCommandsEmbed = new EmbedBuilder()
         .setColor('#cd67f5')
