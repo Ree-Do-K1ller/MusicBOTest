@@ -52,7 +52,7 @@ module.exports = {
           { name: '**[ 👑 ]** Dono', value: "* Mostra o proprietário do código e do tradutor." },
           { name: '**[ 🏓 ]** Ping', value: "* Verifique a latência do bot." },
           { name: '**[ 🗑️ ]** Limpar', value: '* Limpe a fila de músicas deste servidor.' },
-          { name: '**[ ⏱️ ]** Temp', value: '* Exibir o tempo de reprodução da música atual.' },
+          { name: '**[ ⏱️ ]** Tempo', value: '* Exibir o tempo de reprodução da música atual.' },
           { name: '**[ 🎧 ]** Filtro', value: '* Aplique filtros para aprimorar o som como você gosta.' },
           { name: '**[ 🎶 ]** Tocando Agora', value: '* Exibir as informações da música atualmente sendo reproduzida.' },
           { name: '**[ 🔊 ]** Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' }
