@@ -32,8 +32,8 @@ module.exports = {
       queue?.toggleAutoplay();
       
       const embed = new EmbedBuilder()
-        .setColor('#2f58fe')
-        .setTitle('Your Music, Your Call!!')
+        .setColor('#fe2ff0')
+        .setTitle('Sua música, sua chamada.')
         .setDescription(queue?.autoplay ? '**( ✅ )** Autoplay: **ON**' : '**( ❌ )** Autoplay: **OFF**')
         
       
