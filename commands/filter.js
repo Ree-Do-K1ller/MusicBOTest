@@ -54,8 +54,7 @@ module.exports = {
       .setColor('#922cc96')
       .setAuthor({
           name: 'Audio Filters ',
-          iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157534645311766558/2353-arrowrightglow.gif?ex=6518f5a5&is=6517a425&hm=ce55696f7ed85e2f7a97a3505eb39016fa9cd0c50be043efdf0cce06d7126b4c&',
-          url: 'https://discord.gg/FUEHs7RCqz'
+          iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157534645311766558/2353-arrowrightglow.gif?ex=6518f5a5&is=6517a425&hm=ce55696f7ed85e2f7a97a3505eb39016fa9cd0c50be043efdf0cce06d7126b4c&'
         })
       .setDescription('** Explore a batida, escolha sua magia sonora abaixo: <:heheh:1025172645244850197>**')
   
@@ -81,7 +80,7 @@ if(!filters?.includes(button?.customId)) return
           return interaction?.editReply({ embeds: [embed] }).catch(e => { })
         } else {
           queue?.filters?.add(filtre)
-          embed?.setDescription(`Mágica : **{filter}**, Applied Status: **{status}**`.replace("{filter}", filtre).replace("{status}", "✅"))
+          embed?.setDescription(`**Mágica:** {filter}, **Status aplicado:** {status}`.replace("{filter}", filtre).replace("{status}", "✅"))
           return interaction?.editReply({ embeds: [embed] }).catch(e => { })
         }
       } else {
