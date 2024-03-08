@@ -21,7 +21,10 @@ console.log('\x1b[36m%s\x1b[0m', '|    🚀 Commands Distracted!');
 
 console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`)
 
-setInterval(() => client.user.setPresence({ activities: [{ name: `discord.js v14`, type: `WATCHING` }], status: 'dnd' }), 10000);
+setInterval(() => client.user.setPresence({ 
+   activities: [{ name: `sua bunda`, type: ActivityType.Watching }], 
+   status: 'dnd',
+}));
 client.errorLog = config.errorLog
 } else {
 console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
