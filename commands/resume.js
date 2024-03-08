@@ -3,7 +3,7 @@ const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
   name: "retomar",
-  description: "Inicie a música pausada.",
+  description: "Inicie a música pausada",
   permissions: "0x0000000000000800",
   options: [],
   voiceChannel: true,
