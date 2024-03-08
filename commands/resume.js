@@ -2,7 +2,7 @@ const db = require("../mongoDB");
 const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
-  name: "resume",
+  name: "retomar",
   description: "Inicie a música pausada.",
   permissions: "0x0000000000000800",
   options: [],
