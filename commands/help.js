@@ -20,7 +20,7 @@ const { EmbedBuilder, ActionRowBuilder, ButtonBuilder } = require('discord.js');
 const { ButtonStyle } = require('discord.js');
 
 module.exports = {
-  name: "ajudanova",
+  name: "ajuda",
   description: "Obtenha informações sobre bot e seus comandos",
   permissions: "0x0000000000000800",
   options: [],
@@ -58,25 +58,25 @@ module.exports = {
           { name: '**[ 🔊 ]** Volume', value: '- Ajuste o volume da música **[ouvir em volumes altos é arriscado]**.' }
         ) 
 
-        .setImage('https://media.discordapp.net/attachments/1153816645106684096/1154791404464246814/standard_1.gif?ex=65f45fcd&is=65e1eacd&hm=db4548b9aa811de32b1852da0223dc813e61ad88a54d91530755a322046ca2be&=&width=832&height=468')
-      
-      const button1 = new ButtonBuilder()
+       .setImage('https://media.discordapp.net/attachments/1153816645106684096/1154791404464246814/standard_1.gif?ex=65f45fcd&is=65e1eacd&hm=db4548b9aa811de32b1852da0223dc813e61ad88a54d91530755a322046ca2be&=&width=832&height=468')
+
+      //const button1 = new ButtonBuilder()
        // .setLabel('YouTube')
         //.setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
         //.setStyle(ButtonStyle.Link);
 
-      const button2 = new ButtonBuilder()
-        //.setLabel('Discord')
-        //.setURL('https://discord.gg/FUEHs7RCqz')
-        //.setStyle(ButtonStyle.Link);
+    // const button2 = new ButtonBuilder()
+   //     .setLabel('Discord')
+    //    .setURL('https://discord.gg/FUEHs7RCqz')
+     //   .setStyle(ButtonStyle.Link);
 
-      const button3 = new ButtonBuilder()
-     //   .setLabel('Code')
+   //   const button3 = new ButtonBuilder()
+   //     .setLabel('Code')
     //    .setURL('https://replit.com/@BEASTGAMERS1?tab=community')
-    //    .setStyle(ButtonStyle.Link);
+     //   .setStyle(ButtonStyle.Link);
       
-     const row = new ActionRowBuilder()
-        .addComponents(button1, button2, button3);
+    //  const row = new ActionRowBuilder()
+     //   .addComponents(button1, button2, button3);
       interaction.reply({
         embeds: [musicCommandsEmbed, basicCommandsEmbed],
         components: [row]
