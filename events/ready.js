@@ -24,7 +24,7 @@ console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}
 setInterval(() => client.user.setPresence({ 
    activities: [{ name: `sua bunda`, type: ActivityType.Watching }], 
    status: 'dnd',
-}));
+}), 10000);
 client.errorLog = config.errorLog
 } else {
 console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
@@ -32,16 +32,6 @@ console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
 console.log('\x1b[36m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
 
 /*
-##########################
-bot.user.setPresence({
-   status: 'dnd',
-   activity: {
-      name: 'a video',
-       type: 'WATCHING'
-    }
- });
-##########################
-
 setInterval(() => client.user.setActivity({ 
   name: `Yuri's Reality.`, 
   type: ActivityType.Listening }), 10000);
