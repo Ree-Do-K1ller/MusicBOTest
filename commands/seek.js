@@ -1,7 +1,7 @@
 const { ApplicationCommandOptionType, EmbedBuilder } = require('discord.js');
 const db = require("../mongoDB");
 module.exports = {
-  name: "seek",
+  name: "procurarmin",
   description: "pule para um minuto desejado.",
   permissions: "0x0000000000000800",
   options: [{
