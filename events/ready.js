@@ -40,7 +40,7 @@ let nomes = [
 
 setInterval(() => {
    let random = Math.floor(Math.random() * nomes.length);
-   client.user.setPresence({activities: [{status[random]}], status: 'dnd',});
+   client.user.setPresence({activities: (status[random]), status: 'dnd',});
 }, 10000);
 client.errorLog = config.errorLog
 } else {
