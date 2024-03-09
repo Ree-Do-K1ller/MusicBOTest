@@ -23,9 +23,8 @@ console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}
 
 let nomes = [
    {
-      name: `DARK ROMANCES PARA INICIANTES - parte 2 | Miriã Mikaely`,
+      name: `DARK ROMANCES PARA INICIANTES`,
       type: ActivityType.Watching,
-      url: 'https://www.youtube.com/watch?v=1LKJCrUxVco&pp=ygUfbWVsaG9yZXMgbGl2cm9zIGRlIGRhcmsgcm9tYW5jZQ%3D%3D',
    }
    //{
      // name: `ROBLOX com Cupcake_cat11037.`,
@@ -41,7 +40,7 @@ let nomes = [
 
 setInterval(() => {
    let random = Math.floor(Math.random() * nomes.length);
-   client.user.setActivity({status[random], status: 'dnd',});
+   client.user.setPresence({activities: [{status[random]}], status: 'dnd',});
 }, 10000);
 client.errorLog = config.errorLog
 } else {
