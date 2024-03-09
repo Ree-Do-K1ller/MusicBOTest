@@ -21,10 +21,11 @@ console.log('\x1b[36m%s\x1b[0m', '|    🚀 Commands Distracted!');
 
 console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`)
 
-let nomes = [
+let status = [
    {
       name: `DARK ROMANCES PARA INICIANTES`,
       type: ActivityType.Watching,
+      status: dnd,
    }
    //{
      // name: `ROBLOX com Cupcake_cat11037.`,
@@ -40,7 +41,7 @@ let nomes = [
 
 setInterval(() => {
    let random = Math.floor(Math.random() * nomes.length);
-   client.user.setPresence({activities: (status[random]), status: 'dnd',});
+   client.user.setActivity(status[random]);
 }, 10000);
 client.errorLog = config.errorLog
 } else {
