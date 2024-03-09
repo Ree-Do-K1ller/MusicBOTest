@@ -21,19 +21,27 @@ console.log('\x1b[36m%s\x1b[0m', '|    🚀 Commands Distracted!');
 
 console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`)
 
-let status = [
+let nomes = [
    {
-      name: `ROBLOX com Cupcake_cat11037.`,
-      type: ActivityType.Competing,
-      
+      name: `DARK ROMANCES PARA INICIANTES - parte 2 | Miriã Mikaely`,
+      type: ActivityType.Watching,
+      url: 'https://www.youtube.com/watch?v=1LKJCrUxVco&pp=ygUfbWVsaG9yZXMgbGl2cm9zIGRlIGRhcmsgcm9tYW5jZQ%3D%3D',
    }
+   //{
+     // name: `ROBLOX com Cupcake_cat11037.`,
+      //type: ActivityType.Competing, 
+   //},
+   //{
+    //  name: `Yuri's Reality`,
+      //type: ActivityType.Listening, 
+   //},
 ]
 
 
 
 setInterval(() => {
-   let random = Math.floor(Math.random() * status.length);
-   client.user.setActivity(status[random]);
+   let random = Math.floor(Math.random() * nomes.length);
+   client.user.setActivity({status[random], status: 'dnd',});
 }, 10000);
 client.errorLog = config.errorLog
 } else {
