@@ -21,37 +21,9 @@ console.log('\x1b[36m%s\x1b[0m', '|    🚀 Commands Distracted!');
 
 console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`)
 
-let status = [
-   {
-      name: `DARK ROMANCES PARA INICIANTES`,
-      type: ActivityType.Watching,
-      status: dnd,
-   }
-   //{
-     // name: `ROBLOX com Cupcake_cat11037.`,
-      //type: ActivityType.Competing, 
-   //},
-   //{
-    //  name: `Yuri's Reality`,
-      //type: ActivityType.Listening, 
-   //},
-]
 
-
-
-setInterval(() => {
-   let random = Math.floor(Math.random() * nomes.length);
-   client.user.setActivity(status[random]);
-}, 10000);
-client.errorLog = config.errorLog
-} else {
-console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
-}
-console.log('\x1b[36m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
-
-/*
 setInterval(() => client.user.setPresence({ 
-   activities: [{ name: `ROBLOX com Cupcake_cat11037.`, type: ActivityType.Competing }], 
+   activities: [{ name: `ROBLOX junto com Cupcake_cat11037.`, type: ActivityType.Competing }], 
    status: 'dnd',
 }), 10000);
 client.errorLog = config.errorLog
@@ -59,7 +31,7 @@ client.errorLog = config.errorLog
 console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
 }
 console.log('\x1b[36m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
-*/
+
    
 if(client.config.voteManager.status === true && client.config.voteManager.api_key){
 const { AutoPoster } = require('topgg-autoposter')
