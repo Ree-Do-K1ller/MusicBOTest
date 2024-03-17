@@ -82,11 +82,11 @@ return interaction?.reply({ content: "Rate Limited.", ephemeral: true })
             }
             }
             if (props && props.voiceChannel) {
-            if (!interaction?.member?.voice?.channelId) return interaction?.reply({ content: `**( 🔴 )** Entre no <#1119674171312586855> primeiro.`, ephemeral: true }).catch(e => { })
+            if (!interaction?.member?.voice?.channelId) return interaction?.reply({ content: `**( 🔴 )** Entre no <#1025413090046648421> ou no <#1025413140151816244> primeiro.`, ephemeral: true }).catch(e => { })
             const guild_me = interaction?.guild?.members?.cache?.get(client?.user?.id);
             if (guild_me?.voice?.channelId) {
             if (guild_me?.voice?.channelId !== interaction?.member?.voice?.channelId) {
-            return interaction?.reply({ content: `**( 🔴 )** Deve estar no mesmo canal de voz.`, ephemeral: true }).catch(e => { })
+            return interaction?.reply({ content: `**( ⚠️ )** Deve estar no mesmo canal de voz.`, ephemeral: true }).catch(e => { })
             }
             }
             }
