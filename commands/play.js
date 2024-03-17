@@ -35,7 +35,7 @@ module.exports = {
 
       const embed = new EmbedBuilder();
       embed.setColor(client.config.embedColor);
-      embed.setTitle(`Pesquisa: ${name}`);
+      embed.setTitle(`Found: ${name}`);
 
       const maxTracks = res.slice(0, 10);
 
